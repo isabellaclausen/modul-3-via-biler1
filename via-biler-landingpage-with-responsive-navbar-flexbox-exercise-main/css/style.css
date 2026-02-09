@@ -54,7 +54,6 @@ display:flex;
 align-items:center;
 justify-content: space-between;
 z-index: 1000;
-
 }
 
 header .brand {
@@ -71,14 +70,12 @@ header .navbar ul {
     /* Flex Egenskaber */
     display: flex;
     align-items: center;
-
 }
-
 header .navbar ul li {
 position: relative;
 margin: 0 20px;
-}
 
+}
 header .navbar ul li a {
 text-decoration: none;
 font-size: var(--font-size-base);
@@ -89,3 +86,29 @@ font-weight: var(--font-size-medium);
 transition: color 0.3s ease; 
 
 }
+
+header .navbar ul li a:hover {
+color: var(--secondary-color)
+
+}
+
+.workshop-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px 24px;
+    /* border: none; */
+    border: radius 6px;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    }
+
+.workshop-btn:hover {
+background-color: var(--secondary-color);
+transform: translateY(-2px);
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2)
+}
+
