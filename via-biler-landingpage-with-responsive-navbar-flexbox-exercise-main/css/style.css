@@ -1,0 +1,91 @@
+/* CSS VARIABLER - KUN FARVER, TYPOGRAFI OG FONT WEIGHTS */
+:root{
+/* Farver   */
+--primary-color:#000;
+--secondary-color:#333;
+--white:#ffffff;
+--light-gray:#eee;
+
+/* Typografi */
+--font-family:"Inter", Ariel, sans-serif;
+--font-size-small: 13px;
+--font-size-base: 16px;
+--font-size-medium: 18px;
+--font-size-large: 20px;
+--font-size-xl: 24px;
+--font-size-xxl: 28px;
+--font-size-hero: 4.5rem;
+--font-size-hero-tablet: 3rem;
+--font-size-hero-mobile: 2.5rem;
+
+/* Font Weights */
+--font-weight-normal: 400;
+--font-weight-medium: 500;
+--font-weight-semibold: 600;
+--font-weight-bold: 700;
+
+
+}
+
+/* Reset CSS */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+body{
+font-family:var(--font-family);
+line-height: 1.6;
+}
+
+/* Header / Navigation */
+header{
+position:fixed;
+top: 0; 
+left: 0;
+right: 0;
+background: var(--white);
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+padding: 15px 7%; 
+/* Flex Egenskaber */
+display:flex;
+align-items:center;
+justify-content: space-between;
+z-index: 1000;
+
+}
+
+header .brand {
+font-size:var(--font-size-xxl);
+font-weight: var(--font-weight-bold);
+color:var(--primary-color);
+letter-spacing: 2px;
+text-decoration: none;
+}
+
+/* Navigation */
+header .navbar ul {
+    list-style: none;
+    /* Flex Egenskaber */
+    display: flex;
+    align-items: center;
+
+}
+
+header .navbar ul li {
+position: relative;
+margin: 0 20px;
+}
+
+header .navbar ul li a {
+text-decoration: none;
+font-size: var(--font-size-base);
+padding: 15px 10px;
+color: var(--primary-color);
+display: block;
+font-weight: var(--font-size-medium);
+transition: color 0.3s ease; 
+
+}
