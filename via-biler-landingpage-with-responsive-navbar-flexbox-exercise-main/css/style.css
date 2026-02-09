@@ -141,8 +141,70 @@ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2)
 
 /* Mobile/Tablet Styling - Kun ét breakpoint  */
 @media (max-width: 768px) {
-    Herinde skriver man sin css selectors
+
+header {
+    padding: 20px;
 }
+
+
+header .brand{font-size: var(font-size-large);
+}
+
+header label {
+    display: block;
+}
+
+header .navnbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+header .navbar ul {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+header .navnbar ul li {
+    width: 100%;
+    margin: 0;
+}
+
+header .navnbar ul li a {
+    font-size: var(--font-size-medium);
+    padding: 20px;
+    border-bottom: 1px solid var(--light-gray);
+    text-align: left;
+}
+
+nav .workshop-btn {
+    padding: 10px;
+    font-size: var(--font-size-small);
+}
+
+/* Show Navbar when checkbox is checked */
+#menu-bar:checked ~ .navbar {
+    display: block;
+}
+
+.hero {
+    margin-top: 70px;
+    height: 80vh;
+}
+
+.hero-content h1 {
+    font-size: var(--font-size-hero-mobile);
+    padding: 0 20px;
+}
+
+
+
+}
+/* Her slutter Mobile/tablet Styling - Kun ét breakpoint  */
 
 
 
