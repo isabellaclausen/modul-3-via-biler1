@@ -112,3 +112,38 @@ transform: translateY(-2px);
 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2)
 }
 
+#menu-bar {
+    display: none;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    margin-top: 80px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("https://images.unsplash.com/photo-1563720223185-11003d516935?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ }
+
+.hero-content h1{
+    color:var(--white) ;
+    font-size: var(--font-size-hero);
+    font-weight: var(--font-weight-bold);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    letter-spacing: 2px;
+}
+
+/* Mobile/Tablet Styling - Kun ét breakpoint  */
+@media (max-width: 768px) {
+    Herinde skriver man sin css selectors
+}
+
+
+
+
